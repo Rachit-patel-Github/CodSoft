@@ -1,0 +1,64 @@
+🚢 TITANIC SURVIVAL PREDICTOR - USER GUIDE
+===========================================
+
+HOW TO USE THIS APPLICATION (For Beginners)
+---------------------------------------------
+
+STEP 1: START THE PROGRAM
+- Run the program by double-clicking on "titanic_gui_app.py" 
+  OR open Command Prompt, go to this folder, and type:
+  python titanic_gui_app.py
+
+STEP 2: TRAIN THE MODEL
+- Click the big blue "▶ TRAIN MODEL" button
+- Wait for 2-3 minutes while the AI learns from historical data
+- You'll see messages appearing in the "Model Performance" section
+- Once complete, you'll see "✓ Training complete" in green
+
+STEP 3: ENTER PASSENGER INFORMATION
+- Fill in the form with passenger details:
+  * Passenger Class: Choose 1 (First Class), 2 (Second Class), or 3 (Third Class)
+  * Gender: Choose Male or Female
+  * Age: Enter the person's age (example: 25)
+  * Siblings/Spouse: How many brothers/sisters or spouse aboard? (example: 0 or 1)
+  * Parents/Children: How many parents or children aboard? (example: 0)
+  * Ticket Fare: How much did the ticket cost in dollars? (example: 50.5)
+  * Port: Where did they board? C=Cherbourg, Q=Queenstown, S=Southampton
+  * Other fields are optional
+
+STEP 4: GET PREDICTION
+- Click the "🔮 PREDICT SURVIVAL" button
+- The AI will instantly tell you:
+  * Whether it predicts SURVIVED or DID NOT SURVIVE
+  * How confident it is (as a percentage, like 75%)
+
+STEP 5: UNDERSTAND THE RESULTS
+- The bottom section shows which factors were most important:
+  * Higher numbers = More important for survival
+  * These show what patterns the AI found in historical data
+
+EXAMPLE VALUES TO TRY:
+------------------------
+Passenger 1 (Young female from first class):
+  Class: 1, Gender: Female, Age: 18, Fare: 150, Port: S
+
+Passenger 2 (Adult male from third class):
+  Class: 3, Gender: Male, Age: 35, Fare: 7.50, Port: S
+
+Passenger 3 (Child from first class):
+  Class: 1, Gender: Male, Age: 5, Fare: 100, Port: Q
+
+TIPS:
+------
+- You only need to train the model ONCE. After that, you can make unlimited predictions.
+- The prediction is based on AI learning from 891 real passengers from the Titanic
+- More expensive tickets and higher class usually increased survival chances
+- Age and gender were also important factors
+
+WHAT IF I GET AN ERROR?
+------------------------
+- "Dataset not found": Make sure Titanic-Dataset.csv is in the same folder as this program
+- "Input Error": Make sure all required fields (marked with *) have valid numbers
+- "Not trained": Click "TRAIN MODEL" first before making predictions
+
+Questions? The interface explains each step as you go!
